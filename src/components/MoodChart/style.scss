@@ -1,0 +1,24 @@
+@use '../../style/variables' as variables;
+
+.mood-chart {
+  block-size: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: variables.$size-space-xs;
+  flex-direction: column;
+
+  &__actions {
+    display: flex;
+    gap: variables.$size-space-xs;
+  }
+
+  @media only screen and (max-width: 600px) {
+    &__actions {
+      justify-content: center;
+      align-items: center;
+      inline-size: 100%;
+    }
+  }
+}
+

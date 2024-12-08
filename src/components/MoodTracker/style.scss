@@ -1,0 +1,33 @@
+@use '../../style/variables' as variables;
+
+.mood-tracker {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  border: variables.$color-blue solid variables.$size-border-weight;
+  border-radius: variables.$size-border-radius-l;
+  padding: variables.$size-space-m;
+  gap: variables.$size-space-xs;
+
+  &__mood {
+    display: flex;
+    inline-size: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: variables.$size-space-xs;
+    flex: 1;
+    min-inline-size: 200px;
+  }
+
+  &__chart {
+    flex: 3;
+  }
+
+  &__container {
+    inline-size: 100%;
+    flex-wrap: wrap;
+
+    display: flex;
+    gap: variables.$size-space-m;
+  }
+}

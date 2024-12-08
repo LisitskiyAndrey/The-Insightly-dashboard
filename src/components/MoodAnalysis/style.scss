@@ -1,0 +1,13 @@
+@use '../../style/variables' as variables;
+
+.mood-analysis {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: variables.$color-blue solid variables.$size-border-weight;
+  border-radius: variables.$size-border-radius-l;
+  padding: variables.$size-space-m;
+  gap: variables.$size-space-xs;
+  flex-wrap: wrap;
+  font-size: variables.$size-font-xl;
+}

@@ -1,0 +1,13 @@
+@use './style/variables' as variables;
+
+:root {
+  block-size: 100%;
+  font-family: Avantt, sans-serif;
+  padding: variables.$size-space-l;
+  box-sizing: border-box;
+  background: variables.$color-background;
+}
+
+body {
+  min-inline-size: 300px;
+}

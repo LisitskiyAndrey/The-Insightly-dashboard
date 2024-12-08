@@ -1,0 +1,26 @@
+@use '../../../style/variables' as variables;
+
+.neon-button {
+  background: linear-gradient(145deg, #2a2d5f, #50dff6);
+  border: none;
+  border-radius: variables.$size-border-radius-l;
+  color: variables.$color-white;
+  padding: variables.$size-space-xs variables.$size-space-m;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &_active, &:active {
+    box-shadow: 0 0 15px rgba(80, 223, 246, 0.6),
+    0 0 30px rgba(80, 223, 246, 0.4),
+    inset 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(0.98);
+    opacity: 1;
+  }
+
+}

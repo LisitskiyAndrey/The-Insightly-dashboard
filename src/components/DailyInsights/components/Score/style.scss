@@ -1,0 +1,9 @@
+@use "../../../../../src/style/variables" as variables;
+
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: variables.$size-space-m;
+}

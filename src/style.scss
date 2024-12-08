@@ -1,0 +1,33 @@
+@use 'style/variables' as variables;
+#root {
+  width: 100%;
+
+  padding: variables.$size-space-m;
+  text-align: center;
+  background: linear-gradient(#4418c8, #0d0842);
+  box-shadow: inset 0 0 8.75em 2.5em #00000052;
+  border-radius: variables.$size-border-radius-l;
+  color: variables.$color-white;
+  box-sizing: border-box;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: variables.$size-space-m;
+  font-family: Avantt, sans-serif;
+}
+
+:host {
+  inline-size: 100%;
+  display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}

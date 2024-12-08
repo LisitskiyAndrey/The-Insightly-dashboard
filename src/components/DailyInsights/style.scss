@@ -1,0 +1,31 @@
+@use '../../../src/style/variables' as variables;
+
+.daily-insights {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  border: variables.$color-blue solid variables.$size-border-weight;
+  border-radius: variables.$size-border-radius-l;
+  padding: variables.$size-space-m;
+  gap: variables.$size-space-xs;
+
+  &__info {
+    block-size: 300px;
+    inline-size: 100%;
+    display: flex;
+    justify-content: center;
+    gap: variables.$size-space-xs;
+  }
+
+  &__score,
+  &__task {
+    inline-size: 100%;
+    block-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: variables.$color-blue solid variables.$size-border-weight;
+    border-radius: variables.$size-border-radius-l;
+  }
+}

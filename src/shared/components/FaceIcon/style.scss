@@ -1,0 +1,19 @@
+@use '../../../style/variables' as variables;
+
+.face-icon {
+  max-inline-size: 100px;
+  border-radius: 50%;
+  stroke: white;
+
+  &__1 {
+    background-color: rgb(variables.$color-red, 0.5);
+  }
+
+  &__2 {
+    background-color: rgb(variables.$color-gold, 0.5);
+  }
+
+  &__3 {
+    background-color: rgb(variables.$color-green, 0.5);
+  }
+}

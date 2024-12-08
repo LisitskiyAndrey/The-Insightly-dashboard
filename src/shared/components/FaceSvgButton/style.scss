@@ -1,0 +1,21 @@
+@use '../../../style/variables' as variables;
+
+.svg-button {
+  display: flex;
+  cursor: pointer;
+
+  &__1:hover {
+    stroke: variables.$color-red;
+    box-shadow: 0 0 16px 8px rgba(245, 0, 31, 0.5);
+  }
+
+  &__2:hover {
+    stroke: variables.$color-gold;
+    box-shadow: 0 0 16px 8px rgba(255, 215, 0, 0.5);
+  }
+
+  &__3:hover {
+    stroke: variables.$color-green;
+    box-shadow: 0 0 16px 8px rgba(0, 128, 0, 0.5);
+  }
+}
